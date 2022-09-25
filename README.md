@@ -8,6 +8,6 @@ Stuff that I'd rather not spend time googling again.
 
 ## Installing Rstudio Linux
 
-- as of 2022-09-25 Rstudio dependencies create issue Rstudio desktop. There are work-arounds or you can download directly from [daily builds for Ubuntu]((https://dailies.rstudio.com/rstudio/spotted-wakerobin/desktop/jammy/)) which should work out of box: found solution from this [post](https://community.rstudio.com/t/dependency-error-when-installing-rstudio-on-ubuntu-22-04-with-libssl/135397/2). 
+- as of 2022-09-25 Rstudio dependencies create issue Rstudio desktop installation for Ubuntu. Browsing revealed some work-arounds, but simplest option seemed to be to download directly from [daily builds for Ubuntu](https://dailies.rstudio.com/rstudio/spotted-wakerobin/desktop/jammy/) which should work out of box. This solution was [posted here](https://community.rstudio.com/t/dependency-error-when-installing-rstudio-on-ubuntu-22-04-with-libssl/135397/2). 
 - I downloaded `rstudio-2022.07.3-578-amd64.deb` which worked fine
 
