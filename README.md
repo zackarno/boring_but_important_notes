@@ -16,3 +16,22 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 
 ## QGIS on Linux
 [Installing QGIS on Linux](https://courses.spatialthoughts.com/install-qgis-ltr.html#install-qgis-on-linux)
+
+
+## multiple GHs
+ - ssh-keygen -t rsa -b 4096 -C "<personal file comment>" -f ~/.ssh/<personal file name>
+ - eval $(ssh-agent -s)
+ - ssh-add ~/.ssh/<personal file name>
+ - clip < ~/.ssh/windows-carter.pub
+ - go to github -> settings -> ssh key -> paste
+ -  ssh -T git@github.com (should say successful)
+ 
+ - I tried editing config file in ~/.ssh/ folder as directed, but it does not yet seem to be picking the instructions correctly
+ - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH
+ 
+
+ 
+
+ 
+
+
