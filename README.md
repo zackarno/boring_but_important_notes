@@ -28,7 +28,12 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
  -  *Repeat above steps to make another ssh key and add it to the other GH acccount*
 
  - I tried editing config file in ~/.ssh/ folder as directed, but it does not yet seem to be picking the instructions correctly
- - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH
+ - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH - it does not seem to automatically register the rsa/creds
+ - unclear if user would auto chage -- it seems by running global config  --user.email=Zack.Arno@cartercenter.org this fixes ... however restarting computer also semeed to sort i out
+ - first time pushing the `-u` flag seems critical (didn't work without): `git push -u origin master` 
+ 
+
+
  
 
  
