@@ -25,7 +25,8 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
  - `clip < ~/.ssh/windows-carter.pub`
  - go to github -> settings -> ssh key -> paste
  -  `ssh -T git@github.com` (should say successful)
- 
+Repeat above steps to make another ssh key and add it to the other GH acccount
+
  - I tried editing config file in ~/.ssh/ folder as directed, but it does not yet seem to be picking the instructions correctly
  - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH
  
