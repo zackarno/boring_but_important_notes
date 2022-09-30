@@ -31,6 +31,7 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
  - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH - it does not seem to automatically register the rsa/creds
  - unclear if user would auto chage -- it seems by running global config  --user.email=Zack.Arno@cartercenter.org this fixes ... however restarting computer also semeed to sort i out
  - first time pushing the `-u` flag seems critical (didn't work without): `git push -u origin master` 
+ - `git remote set-url origin` can be used to change remote rather than removing and adding
  
 
 
