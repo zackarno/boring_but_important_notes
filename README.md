@@ -19,20 +19,25 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 
 
 ## multiple GHs
+
+### on windows
  - `ssh-keygen -t rsa -b 4096 -C "<personal file comment>" -f ~/.ssh/<personal file name>`
  - `eval $(ssh-agent -s)`
  - `ssh-add ~/.ssh/<personal file name>`
- - `clip < ~/.ssh/windows-carter.pub`
+ - `clip < ~/.ssh/<personal public name (i.e .pub)`
  - go to github -> settings -> ssh key -> paste
  -  `ssh -T git@github.com` (should say successful)
  -  *Repeat above steps to make another ssh key and add it to the other GH acccount*
 
  - I tried editing config file in ~/.ssh/ folder as directed, but it does not yet seem to be picking the instructions correctly
  - at this stage I need to keep using `ssh-add` correct rsa file prior to pushing to the correct GH - it does not seem to automatically register the rsa/creds
- - unclear if user would auto chage -- it seems by running global config  --user.email=Zack.Arno@cartercenter.org this fixes ... however restarting computer also semeed to sort i out
+ - unclear if user would auto chage -- it seems by running global config  --user.email=xxx@yyy.org this fixes ... however restarting computer also semeed to sort i out
  - first time pushing the `-u` flag seems critical (didn't work without): `git push -u origin master` 
  - `git remote set-url origin` can be used to change remote rather than removing and adding
  
+ ### On Mac
+ 
+ easier -- pretty much just follow instructions on github docs [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), but basically set up the config file as in this [youtube video](https://www.youtube.com/watch?v=zBssUO_5H_A&t=324s)... should look into keychain
 
 
  
