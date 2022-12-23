@@ -47,7 +47,7 @@ How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : 
 
 ## `{targets}`
 
-I've trouble shot this same problem more than once even though it's very simple. When `tar_load_everything()` gives error it's often because targets/names are no longer in pipeling. Quickest fix is `targets::tar_prune()`
+I've trouble shot this same problem more than once even though it's very simple. When `tar_load_everything()` gives error it's often because targets/names are no longer in pipeline. Quickest fix is `targets::tar_prune()`
 
 
  
