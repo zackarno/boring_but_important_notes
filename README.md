@@ -41,6 +41,11 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 - **Important** When using `git remote set-url origin` or `git clone` you need to use ssh url and include your `Host` listed in config file within the ssh url. **Hint** leave personal/default just as github.com and you wont need to change the url. In this case will just modify when using other accounts 
 
 
+## Git
+
+How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : `git reset --hard HEAD^` , then git push -f
+
+
  
 
  
