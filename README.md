@@ -43,7 +43,7 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 
 ## Git
 
-How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : `git reset --hard HEAD^` , then git push -f
+How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : `git reset --hard HEAD^` , then `git push -f`
 
 
  
