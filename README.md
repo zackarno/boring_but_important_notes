@@ -44,6 +44,7 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 ## Git
 
 How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : `git reset --hard HEAD^` , then `git push -f`
+(Instructions on removing .DS_Store from git tracking)[https://gist.github.com/lohenyumnam/2b127b9c3d1435dc12a33613c44e6308]
 
 ## `{targets}`
 
