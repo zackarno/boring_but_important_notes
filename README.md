@@ -40,6 +40,15 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 - easier -- pretty much just follow instructions on github docs [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), but basically set up the config file as in this [youtube video](https://www.youtube.com/watch?v=zBssUO_5H_A&t=324s)... *should look into keychain*
 - **Important** When using `git remote set-url origin` or `git clone` you need to use ssh url and include your `Host` listed in config file within the ssh url. **Hint** leave personal/default just as github.com and you wont need to change the url. In this case will just modify when using other accounts 
 
+### on linux
+
+- ssh-keygen -t ed25519 -C `"youremail@domain.com"`
+- Enter file in which to save the key (/home/{user}/.ssh/id_ed25519): `/home/{user}/.ssh/{custom_name}`
+- eval "$(ssh-agent -s)"
+- ssh-add ~/.ssh/{custom_name}  (should then say identity added)
+- `cat ~/.ssh/{custom_name}.pub` copy contents to clipboard and make new key in GH setting
+- test authentication with `ssh -T git@github.com`
+
 
 ## Git
 
@@ -47,7 +56,7 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 - [Instructions on removing .DS_Store from git tracking](https://gist.github.com/lohenyumnam/2b127b9c3d1435dc12a33613c44e6308)
 
 ## `{targets}`
-
+ 
 I've trouble shot this same problem more than once even though it's very simple. When `tar_load_everything()` gives error it's often because targets/names are no longer in pipeline. Quickest fix is `targets::tar_prune()`
 
 
