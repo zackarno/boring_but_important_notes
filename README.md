@@ -21,7 +21,7 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 
 ### Mac
 
-QGIS open multiple instance at once: in termina - `open -n /Applications/QGIS.app`
+Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.app`
 
 ## multiple GHs
 
