@@ -14,9 +14,14 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 - To use `install.packages()` you need to install `r-base-dev` via terminal with  `sudo apt install r-base-dev`
 - Some R packages (i.e **tidyverse**) depend on non R packages which should be installed via terminal first with: `sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev`
 
-## QGIS on Linux
+## QGIS 
+
+### Linux
 [Installing QGIS on Linux](https://courses.spatialthoughts.com/install-qgis-ltr.html#install-qgis-on-linux)
 
+### Mac
+
+QGIS open multiple instance at once: in termina - `open -n /Applications/QGIS.app`
 
 ## multiple GHs
 
