@@ -73,6 +73,9 @@ I've trouble shot this same problem more than once even though it's very simple.
 - combine these
  + https://dev.to/letsbsocial1/installing-pgadmin-only-after-installing-postgresql-with-homebrew-part-2-4k44
  + https://stackoverflow.com/questions/61576670/databases-in-psql-dont-show-up-in-pgadmin4#:~:text=Try%20menu%20File%20%2D%3E%20Preferences%2C,option%20is%20at%20the%20bottom.&text=and%20then%20you%20will%20see%20your%20database%20without%20changing%20PgAdmin%20preferences.
+ 
+ ## Mac terminal 
+ - `caffeinate -i -s Rscript -e 'targets::tar_make() `
 
  
 
