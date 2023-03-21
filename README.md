@@ -58,6 +58,8 @@ Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.
 ## Git
 
 - How to undo commit + push (from [here](https://happygitwithr.com/reset.html)) : `git reset --hard HEAD^` , then `git push -f`
+ + `--hard` will restore to state of last commit
+ + `--soft` will restore workind directory to state just before last commit (useful if you want to fix staging/commit messages)
 - [Instructions on removing .DS_Store from git tracking](https://gist.github.com/lohenyumnam/2b127b9c3d1435dc12a33613c44e6308)
 
 ## `{targets}`
