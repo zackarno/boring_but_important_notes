@@ -78,6 +78,10 @@ I've trouble shot this same problem more than once even though it's very simple.
  
  ## Mac terminal 
  - `caffeinate -i -s Rscript -e 'targets::tar_make() `
+ 
+ 
+ ## Force RGB
+ - [force RGB on m1/m2](https://gist.github.com/GetVladimir/c89a26df1806001543bef4c8d90cc2f8)
 
  
 
