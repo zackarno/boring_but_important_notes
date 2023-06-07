@@ -79,6 +79,9 @@ I've trouble shot this same problem more than once even though it's very simple.
  ## Mac terminal 
  - `caffeinate -i -s Rscript -e 'targets::tar_make()'
  
+ Sometimes when running a background process in terminal that require a lot of files open in memory can run into error. In this case 
+ - `ulimit -n 100000` # 100000 is just an example and likely way more than enough, probably smart to adjust to less.
+ 
  
  ## Force RGB
  - [force RGB on m1/m2](https://gist.github.com/GetVladimir/c89a26df1806001543bef4c8d90cc2f8)
