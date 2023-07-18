@@ -43,7 +43,7 @@ Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.
  ### On Mac
  
 - easier -- pretty much just follow instructions on github docs [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), but basically set up the config file as in this [youtube video](https://www.youtube.com/watch?v=zBssUO_5H_A&t=324s)... *should look into keychain*
-- **Important** When using `git remote set-url origin` or `git clone` you need to use ssh url and include your `Host` listed in config file within the ssh url. **Hint** leave personal/default just as github.com and you wont need to change the url. In this case will just modify when using other accounts 
+- **Important** When using `git remote set-url origin` or `git clone` you need to use ssh url and include your `Host` listed in config file (12:20 in video) within the ssh url. **Hint** leave personal/default just as github.com and you wont need to change the url. In this case will just modify when using other accounts 
 
 ### on linux
 
