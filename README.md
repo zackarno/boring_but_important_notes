@@ -86,6 +86,9 @@ I've trouble shot this same problem more than once even though it's very simple.
  ## Force RGB
  - [force RGB on m1/m2](https://gist.github.com/GetVladimir/c89a26df1806001543bef4c8d90cc2f8)
 
+## Logitech
+1+fn+F13 (should be able to find mac forum add link here)
+
  
 
  
