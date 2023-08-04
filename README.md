@@ -62,8 +62,7 @@ Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.
  + `--soft` will restore workind directory to state just before last commit (useful if you want to fix staging/commit messages)
  + to just unstage changes run `git reset HEAD` -- won't remove from directory just staging
 - [Instructions on removing .DS_Store from git tracking](https://gist.github.com/lohenyumnam/2b127b9c3d1435dc12a33613c44e6308)
--  to quickly amend previous commit w/ new change (Note danger in doing this if actively collaborating)
- + `git commit --amend --no-edit` -> `git push -f`
+-  to quickly amend previous commit w/ new change (Note danger in doing this if actively collaborating): `git commit --amend --no-edit` -> `git push -f`
 
 ## `{targets}`
  
