@@ -83,6 +83,8 @@ I've trouble shot this same problem more than once even though it's very simple.
  
  Sometimes when running a background process in terminal that require a lot of files open in memory can run into error. In this case 
  - `ulimit -n 100000` # 100000 is just an example and likely way more than enough, probably smart to adjust to less.
+
+ - After updatin R to silicon arm64 version I could now longer run R out of the terminal (i.e `caffeinate -i -s Rscript -e 'targets::tar_make()'`) . This seemed to be b/c it was not correctly identifying the `.libPaths()` . I messed around with `.zshrc` quite a bit, but eventually only solution was just `brew uninstall r` to get rid of the homebrew version. At the time I updated to arm version it was not on hombrew.
  
  
  ## Force RGB
