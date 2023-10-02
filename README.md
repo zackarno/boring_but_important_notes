@@ -21,7 +21,8 @@ For getting packages up and running I followed this [link](https://blog.zenggyu.
 
 ### Mac
 
-Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.app`
+- Open multiple QGIS instances at once: in terminal - `open -n /Applications/QGIS.app`
+- I updated QGIS and non of the layers in my local postgres db would load. Running `brew upgrade abseil` seemed to have resolved it! will report back if it broke other processes/apps
 
 ## multiple GHs
 
