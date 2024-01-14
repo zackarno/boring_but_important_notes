@@ -94,6 +94,9 @@ I've trouble shot this same problem more than once even though it's very simple.
 ## Logitech
 1+fn+F13 (should be able to find mac forum add link here)
 
+## Shiny
+- `browser()` does not work interactively to debug `flex_dashboard()` instead use `rmarkdown::run("my-dashboard.Rmd")` [GH issue](https://github.com/rstudio/flexdashboard/issues/115)
+
  
 
  
