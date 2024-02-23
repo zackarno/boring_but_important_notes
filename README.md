@@ -81,6 +81,7 @@ I've trouble shot this same problem more than once even though it's very simple.
  
  ## Mac terminal 
  - `caffeinate -i -s Rscript -e 'targets::tar_make()'`
+ - `caffeinate -i -s Rscript run.R`
  
  Sometimes when running a background process in terminal that require a lot of files open in memory can run into error. In this case 
  - `ulimit -n 100000` # 100000 is just an example and likely way more than enough, probably smart to adjust to less.
