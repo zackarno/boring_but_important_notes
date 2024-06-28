@@ -7,6 +7,11 @@ This repo contains notes for myself that I'd rather not spend time googling agai
 - [pyenv and venv for windows instructions](https://k0nze.dev/posts/install-pyenv-venv-vscode/) and accompanying [video](https://www.youtube.com/watch?v=HTx18uyyHw8)
 - [new pyenv virtual env method ](https://realpython.com/intro-to-pyenv/)
 
+### pyenv for env & python
+- clone or create new repo
+- open in vscode `pyenv virtualenv 3.x.x name-of-repo` this will create a pyenv managed virtual environment inside the pyenv directory (not repo directory)
+- however from an project you can just call `pyenv activate name-of-venv` to activateit
+
 ## R/R-studio Linux
 - followed R-studio/CRAN directions for installing R
 - as of 2022-09-25 Rstudio dependencies create issue Rstudio desktop installation for Ubuntu. Browsing revealed some work-arounds, but simplest option seemed to be to download directly from [daily builds for Ubuntu](https://dailies.rstudio.com/rstudio/spotted-wakerobin/desktop/jammy/) which should work out of box. This solution was [posted here](https://community.rstudio.com/t/dependency-error-when-installing-rstudio-on-ubuntu-22-04-with-libssl/135397/2). 
