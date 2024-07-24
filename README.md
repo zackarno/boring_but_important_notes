@@ -15,8 +15,9 @@ This repo contains notes for myself that I'd rather not spend time googling agai
 - however from an project you can just call `pyenv activate name-of-venv` to activateit
 - for jupyter you will need to to
     1. `pip install ipykernel` in correct activated env
-    2. python -m ipykernel install --user --name name-of-env --display-name "name-of-env"
-    3. Then when you open jupyter/jupyter lab the kernel will be recognized....**Note** you can have just one version of jupyter installed in you base pyenv version and when you open it you will be able to access the kernels after following steps 1 & 2. I only realized I hadn't done this so I had to run:
+    2. `python -m ipykernel install --user --name name-of-env --display-name "name-of-env"`. Example: `ds-raster-pipelines % python -m ipykernel install --user --name ds-raster-pipeline
+s --display-name "ds-raster-pipelines"`
+    4. Then when you open jupyter/jupyter lab the kernel will be recognized....**Note** you can have just one version of jupyter installed in you base pyenv version and when you open it you will be able to access the kernels after following steps 1 & 2. I only realized I hadn't done this so I had to run:
          a. `pyenv deactivate` - > `pyenv which python` (to make sure i was in pyenv/3.11.4 but not project specific venv) -> `pip install jupyterlab`
        
 
