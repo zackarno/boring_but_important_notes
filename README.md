@@ -9,6 +9,8 @@ This repo contains notes for myself that I'd rather not spend time googling agai
 
 ### pyenv for env & python
 - clone or create new repo
+- You can check if you already have the python version required by running `pyenv version`. If not you need to install with `pyenv install x.y.z` you can see all the available versions with `pyenv install --list`. I had the issue where `pyenv install --list` did not show the required version. I followed the 2nd advice in this [GH Issue](https://github.com/pyenv/pyenv-update) first to `brew upgrade pyenv` since I installed it w/ brew. However, this didn't work. Therefore I followed the first advice to get `pyenv update` to work by following [instruction to clone pyenv update](https://github.com/pyenv/pyenv-update) and then ran `pyenv update` which worked.
+- Interestingly the command below will then control both the python version and your virtual env. Don't try to set the local python version with `pyenv local x.y.z`
 - open in vscode `pyenv virtualenv 3.x.x name-of-repo` this will create a pyenv managed virtual environment inside the pyenv directory (not repo directory)
 - however from an project you can just call `pyenv activate name-of-venv` to activateit
 - for jupyter you will need to to
