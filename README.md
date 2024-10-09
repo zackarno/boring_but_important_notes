@@ -6,7 +6,7 @@ This repo contains notes for myself that I'd rather not spend time googling agai
 
 - [pyenv and venv for windows instructions](https://k0nze.dev/posts/install-pyenv-venv-vscode/) and accompanying [video](https://www.youtube.com/watch?v=HTx18uyyHw8)
 - [new pyenv virtual env method ](https://realpython.com/intro-to-pyenv/)
-
+- gotcha... need to `pip install -e.` in order to source local modules. They also need a `__init__.py` file in them and sub-directories
 ### pyenv for env & python
 - clone or create new repo
 - You can check if you already have the python version required by running `pyenv version`. If not you need to install with `pyenv install x.y.z` you can see all the available versions with `pyenv install --list`. I had the issue where `pyenv install --list` did not show the required version. I followed the 2nd advice in this [GH Issue](https://github.com/pyenv/pyenv-update) first to `brew upgrade pyenv` since I installed it w/ brew. However, this didn't work. Therefore I followed the first advice to get `pyenv update` to work by following [instruction to clone pyenv update](https://github.com/pyenv/pyenv-update) and then ran `pyenv update` which worked.
