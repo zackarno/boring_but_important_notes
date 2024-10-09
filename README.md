@@ -21,6 +21,48 @@ s --display-name "ds-raster-pipelines"`
          a. `pyenv deactivate` - > `pyenv which python` (to make sure i was in pyenv/3.11.4 but not project specific venv) -> `pip install jupyterlab`
        
 
+At some point something got funky with my pyenv virtualenv plugin. Whenever i tried to create a new virtual env  (i.e `pyenv vitualenv 3.12.4 abasdfa`) ... it woudl say something like `pyenv version note found -q flag`. The environment would be there after though when i run pyenv versions. If I activated the env and wrote `which python` or `python --version` it would say the wrong version however. Then if i installed ipykernel and followed instructions to create a kernel the kernel would have the wrong python version in `json` file. After investigating it seemed virtualenv was not really in the .pyenv/plugins.. directory. So i just decided to reinstall the pluging again 
+
+Along the way i deleted all my venvs by accident :-) learning that:
+
+
+pyenv uninstall xyz-envname seems to uninstall one of it's locations in the `pyenv versions` output, but not the other... not sure why .. to get rid of this you can do :
+
+```
+cd ~/.pyenv/versions/3.12.4/envs/
+rm -rf xyz-envname
+```
+which will delete the whoel thing. I did this to the other python envs which i thought were just wastefull replicated here, woops deleted the environments enitrely.. i guess just a better method than pyenv install.
+
+end of the day to update `pyenv` and `pyenv virtualenv` I went with: 
+
+```
+cd ~/.pyenv
+git pull
+```
+
+Then tried chunk below, but folder wasn't there
+```
+cd ~/.pyenv/plugins/pyenv-virtualenv
+git pull
+```
+
+so went with 
+
+```
+git clone https://github.com/pyenv/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+exec "$SHELL"
+
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+exec "$SHELL"
+
+```
+
 
 ## R/R-studio Linux
 - followed R-studio/CRAN directions for installing R
