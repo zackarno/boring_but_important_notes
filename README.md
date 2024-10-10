@@ -84,6 +84,19 @@ source ~/.zshrc
 ```
 and tehn it recognizes correct version
 
+### VS CODE
+
+getting quarto to work reasonably...
+- get quarto extension
+- running terminal `quarto` commands.. i.e `quarto preview` doesn't work... says "command not found"
+- eventually added: to preferences "quarto.path": "/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto"
+- eventually added to .zschrc:
+```
+echo 'export PATH="/Applications/RStudio.app/Contents/Resources/app/quarto/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+- lots of restarting terminal... top right next to scripts  there is a preview button that will eventually work after tinkering with the above
+
 ## R/R-studio Linux
 - followed R-studio/CRAN directions for installing R
 - as of 2022-09-25 Rstudio dependencies create issue Rstudio desktop installation for Ubuntu. Browsing revealed some work-arounds, but simplest option seemed to be to download directly from [daily builds for Ubuntu](https://dailies.rstudio.com/rstudio/spotted-wakerobin/desktop/jammy/) which should work out of box. This solution was [posted here](https://community.rstudio.com/t/dependency-error-when-installing-rstudio-on-ubuntu-22-04-with-libssl/135397/2). 
