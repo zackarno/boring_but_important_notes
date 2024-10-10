@@ -63,6 +63,26 @@ exec "$SHELL"
 
 ```
 
+Another day: After creatinga new pyenv with
+```
+pyenv virtualenv 3.12.4 name-of-repo
+```
+
+i then run :
+
+```
+pyenv activate name-of-repo
+which python
+#>3.11.4
+python --version
+#> 3.11.4
+```
+
+I have to run :
+```
+source ~/.zshrc
+```
+and tehn it recognizes correct version
 
 ## R/R-studio Linux
 - followed R-studio/CRAN directions for installing R
