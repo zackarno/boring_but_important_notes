@@ -19,8 +19,15 @@ This repo contains notes for myself that I'd rather not spend time googling agai
 s --display-name "ds-raster-pipelines"`
     4. Then when you open jupyter/jupyter lab the kernel will be recognized....**Note** you can have just one version of jupyter installed in you base pyenv version and when you open it you will be able to access the kernels after following steps 1 & 2. I only realized I hadn't done this so I had to run:
          a. `pyenv deactivate` - > `pyenv which python` (to make sure i was in pyenv/3.11.4 but not project specific venv) -> `pip install jupyterlab`
-       
 
+**update 2024-12-10:**  So somehow even if u create a pyenv env, activate it, use the ipykernel command line code above, sometimes it doesn't get properly recognized. It's helpful to check the kernel json to see where the kernel is pointing. In one case it was pointing at correct environment inside the base python `.pyenv/versions/3.12.4/envs/name-env/bin/python rather` than `.pyenv/versions/name-env/bin/python` (which is the shortcut).  This actually was caused the kernel not to work properly. So i manually adjusted teh json to the shortcut version. Anyways, a good troubleshooting method is to open the jupyter notebook, try to activate kernel and run:
+
+```
+!which pip
+!pyenv which pip
+!which python
+```
+ `
 At some point something got funky with my pyenv virtualenv plugin. Whenever i tried to create a new virtual env  (i.e `pyenv vitualenv 3.12.4 abasdfa`) ... it woudl say something like `pyenv version note found -q flag`. The environment would be there after though when i run pyenv versions. If I activated the env and wrote `which python` or `python --version` it would say the wrong version however. Then if i installed ipykernel and followed instructions to create a kernel the kernel would have the wrong python version in `json` file. After investigating it seemed virtualenv was not really in the .pyenv/plugins.. directory. So i just decided to reinstall the pluging again 
 
 Along the way i deleted all my venvs by accident :-) learning that:
